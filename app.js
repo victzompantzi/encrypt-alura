@@ -1,4 +1,4 @@
-//I need a variable for the input text.q
+// Arrays populated with the vowels and coding patterns
 const vowels = ["a", "e", "i", "o", "u"];
 const encryptedVowels = ["ai", "enter", "imes", "ober", "ufat"];
 let resultText = "";
@@ -9,6 +9,7 @@ function encryptDecrypt(id) {
   if (inputUser === "") {
     return;
   } else if (id === 1) {
+    // The function captures user input for parsing and substitutes vowels for patterns
     for (let i = 0; i < inputUser.length; i++) {
       if (inputUser[i] === vowels[0]) {
         resultText += encryptedVowels[0];
