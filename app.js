@@ -41,11 +41,11 @@ function encryptDecrypt(id) {
     }
   }
   const outputResult = document.getElementById("program__output");
-  outputResult.classList.add("program__outputResult");
-  outputResult.classList.remove("program__output");
+  outputResult?.classList.add("program__outputResult");
+  outputResult?.classList.remove("program__output");
   const newTex = document.getElementById("msg");
-  newTex.classList.add("program__output--msgResult");
-  newTex.classList.remove("program__output--msg");
+  newTex?.classList.add("program__output--msgResult");
+  newTex?.classList.remove("program__output--msg");
   newTex.textContent = resultText;
   return;
 }
@@ -55,6 +55,7 @@ function copy() {
   const textToCopy = copyText?.textContent;
   const tempInput = document.createElement("input");
   tempInput.value = textToCopy;
+  // Assuming tempInput is an HTMLInputElement
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
