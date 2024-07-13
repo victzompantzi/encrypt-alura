@@ -23,11 +23,6 @@ input::placeholder {
   color: var(--dark-blue-300);
 }
 
-.header__menu {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .header__menu--logo img {
   width: 8%; /* 120px; */
   height: 8%; /* 48px;*/
@@ -187,9 +182,6 @@ input::placeholder {
     height: 697px;
     padding-top: 200px;
     padding-left: 0px;
-  }
-
-  .program__input--text {
   }
 
   .buttons {
